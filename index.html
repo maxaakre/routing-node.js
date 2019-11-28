@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/submission.html">
+            <h3>Field's with a <span>*</span> are required.</h3>
+            <hr />
+            <!-- Form message -->
+            <ul id="form-msg"></ul>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="input-fname">First Name: <span> *</span></label>
+                    <input placeholder="John" type="text" name="fname" id="input-fname" />
+                </div>
+                <div class="flex-item">
+                    <label for="input-lname">Last Name: <span> *</span></label>
+                    <input placeholder="Doe" type="text" name="lname" id="input-lname" />
+                </div>
+            </div>
+            <label for="input-number">Telephone: <span> *</span></label>
+            <input placeholder="123-4567890" type="tel" max="9" id="input-number" />
+
+            <label for="input-mail">Mail: <span> *</span></label>
+            <input placeholder="mail123@mail.com" type="text" name="email" id="input-mail" />
+            <label for="input-message">Your age:</label>
+            <select id="input-age">
+                <option value="Select your age" selected="selected">Select your age</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <h3 id="success"></h3>
+    </div>
+
+    <script src="/static/function.js"></script>
+</body>
+
+</html>
